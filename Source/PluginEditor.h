@@ -19,8 +19,8 @@
 
 //==============================================================================
 /**
-*/
-class ATKBassPreampAudioProcessorEditor  : public AudioProcessorEditor
+ */
+class ATKBassPreampAudioProcessorEditor: public AudioProcessorEditor
 {
 public:
   ATKBassPreampAudioProcessorEditor(ATKBassPreampAudioProcessor& p, AudioProcessorValueTreeState& paramState);
@@ -35,11 +35,11 @@ private:
   // access the processor object that created it.
   ATKBassPreampAudioProcessor& processor;
   AudioProcessorValueTreeState& paramState;
-  
+
   ATK::juce::VolumeFilterComponent gain;
   ATK::juce::ToneStackFilterComponent stack;
   ATK::juce::VolumeFilterComponent volume;
   ATK::juce::DryWetFilterComponent drywet;
 
-  JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (ATKBassPreampAudioProcessorEditor)
+  JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(ATKBassPreampAudioProcessorEditor)
 };

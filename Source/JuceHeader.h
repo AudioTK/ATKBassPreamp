@@ -30,18 +30,17 @@
 #include <juce_opengl/juce_opengl.h>
 #include <juce_video/juce_video.h>
 
-
-#if ! DONT_SET_USING_JUCE_NAMESPACE
- // If your code uses a lot of JUCE classes, then this will obviously save you
- // a lot of typing, but can be disabled by setting DONT_SET_USING_JUCE_NAMESPACE.
- using namespace juce;
+#if !DONT_SET_USING_JUCE_NAMESPACE
+// If your code uses a lot of JUCE classes, then this will obviously save you
+// a lot of typing, but can be disabled by setting DONT_SET_USING_JUCE_NAMESPACE.
+using namespace juce;
 #endif
 
-#if ! JUCE_DONT_DECLARE_PROJECTINFO
+#if !JUCE_DONT_DECLARE_PROJECTINFO
 namespace ProjectInfo
 {
-    const char* const  projectName    = JucePlugin_Name;
-    const char* const  versionString  = JucePlugin_VersionString;
-    const int          versionNumber  = JucePlugin_VersionCode;
-}
+const char* const projectName = JucePlugin_Name;
+const char* const versionString = JucePlugin_VersionString;
+const int versionNumber = JucePlugin_VersionCode;
+} // namespace ProjectInfo
 #endif
