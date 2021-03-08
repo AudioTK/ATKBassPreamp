@@ -27,13 +27,13 @@ Source: "..\Builds\VisualStudio2019_32\Win32\Release\VST3\ATKBassPreamp.vst3"; D
 Source: "..\Builds\VisualStudio2019_32\Win32\Release\VST3\ATKBassPreamp.vst3"; DestDir: "{cf32}\VST3\"; Check: Is64BitInstallMode; Components:vst3_32; Flags: ignoreversion;
 Source: "..\Builds\VisualStudio2019\x64\Release\VST3\ATKBassPreamp x64.vst3"; DestDir: "{cf64}\VST3\"; Check: Is64BitInstallMode; Components:vst3_64; Flags: ignoreversion;
 
-Source: "..\manual\ATKBassPreamp_manual.pdf"; DestDir: "{app}"
+Source: "..\manual\BassPreamp_manual.pdf"; DestDir: "{app}"
 Source: "changelog.txt"; DestDir: "{app}"
 Source: "readmewin.rtf"; DestDir: "{app}"; DestName: "readme.rtf"; Flags: isreadme
 
 [Icons]
 Name: "{group}\ATKBassPreamp"; Filename: "{app}\ATKBassPreamp.exe"
-;Name: "{group}\User guide"; Filename: "{app}\ATKBassPreamp_manual.pdf"
+;Name: "{group}\User guide"; Filename: "{app}\BassPreamp_manual.pdf"
 Name: "{group}\Changelog"; Filename: "{app}\changelog.txt"
 ;Name: "{group}\readme"; Filename: "{app}\readme.rtf"
 Name: "{group}\Uninstall ATKBassPreamp"; Filename: "{app}\unins000.exe"
