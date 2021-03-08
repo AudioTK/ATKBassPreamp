@@ -23,9 +23,9 @@ def update_plist(plistpath, CFBundleGetInfoString, CFBundleVersion):
 def main():
 
   FullVersionStr = ""
-  for line in fileinput.input(scriptpath + "/Source/AppConfig.h",inplace=0):
-    if "#define JucePlugin_Version " in line:
-      FullVersionStr = line.lstrip("#define JucePlugin_Version ").strip()
+  for line in fileinput.input(scriptpath + "/JuceLibraryCode/JucePluginDefines.h",inplace=0):
+    if "JucePlugin_Version " in line:
+      FullVersionStr = line.split("JucePlugin_Version")[-1].strip()
     
   today = datetime.date.today()
   CFBundleGetInfoString = FullVersionStr + ", Copyright MatthieuBrucher, " + str(today.year)
@@ -40,7 +40,7 @@ def main():
 
   print("Updating Mac Installer version info...")
   
-  plistpath = scriptpath + "/installer/ATKBassPreamp.pkgproj"
+  plistpath = scriptpath + "/installer/MT2.pkgproj"
   installer = plistlib.readPlist(plistpath)
   
   for x in installer['PACKAGES']:
@@ -51,7 +51,7 @@ def main():
   
   print("Updating Windows Installer version info...")
   
-  for line in fileinput.input(scriptpath + "/installer/ATKBassPreamp.iss",inplace=1):
+  for line in fileinput.input(scriptpath + "/installer/MT2.iss",inplace=1):
     if "AppVersion" in line:
       line="AppVersion=" + FullVersionStr + "\n"
     sys.stdout.write(line)

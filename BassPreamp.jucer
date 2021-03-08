@@ -4,15 +4,15 @@
               splashScreenColour="Dark" projectType="audioplug" version="1.1"
               bundleIdentifier="com.MatthieuBrucher.ATKBassPreamp" includeBinaryInAppConfig="1"
               buildVST="0" buildVST3="1" buildAU="0" buildAUv3="1" buildRTAS="0"
-              buildAAX="1" buildStandalone="1" enableIAA="0" pluginName="BassPreamp"
+              buildAAX="0" buildStandalone="1" enableIAA="0" pluginName="BassPreamp"
               pluginDesc="" pluginManufacturer="MatthieuBrucher" pluginManufacturerCode="MatB"
               pluginCode="Khql" pluginChannelConfigs="{1,1}" pluginIsSynth="0"
               pluginWantsMidiIn="0" pluginProducesMidiOut="0" pluginIsMidiEffectPlugin="0"
               pluginEditorRequiresKeys="0" pluginAUExportPrefix="ATKBassPreamp"
               pluginRTASCategory="" aaxIdentifier="com.MatthieuBrucher.BassPreamp"
               pluginAAXCategory="0" companyName="Matthieu Brucher" companyWebsite="http://www.audio-tk.com/"
-              pluginFormats="buildAAX,buildAUv3,buildStandalone,buildVST3"
-              cppLanguageStandard="latest" jucerFormatVersion="1" defines="JUCE_VST3_CAN_REPLACE_VST2=0">
+              pluginFormats="buildAUv3,buildStandalone,buildVST3" cppLanguageStandard="latest"
+              jucerFormatVersion="1" defines="JUCE_VST3_CAN_REPLACE_VST2=0">
   <MAINGROUP id="H9V4ut" name="BassPreamp">
     <GROUP id="{65FEA80A-F647-1916-F1CE-08CA719AE1BE}" name="Source">
       <FILE id="LX9XxX" name="PluginProcessor.cpp" compile="1" resource="0"
