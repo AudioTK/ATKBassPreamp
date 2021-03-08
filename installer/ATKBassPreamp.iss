@@ -1,6 +1,6 @@
 [Setup]
 AppName=ATKBassPreamp
-AppVersion=
+AppVersion=1.1
 
 
 DefaultDirName={pf}\ATKBassPreamp

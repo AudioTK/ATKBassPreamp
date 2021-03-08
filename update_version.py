@@ -40,7 +40,7 @@ def main():
 
   print("Updating Mac Installer version info...")
   
-  plistpath = scriptpath + "/installer/MT2.pkgproj"
+  plistpath = scriptpath + "/installer/ATKBassPreamp.pkgproj"
   installer = plistlib.readPlist(plistpath)
   
   for x in installer['PACKAGES']:
@@ -51,7 +51,7 @@ def main():
   
   print("Updating Windows Installer version info...")
   
-  for line in fileinput.input(scriptpath + "/installer/MT2.iss",inplace=1):
+  for line in fileinput.input(scriptpath + "/installer/ATKBassPreamp.iss",inplace=1):
     if "AppVersion" in line:
       line="AppVersion=" + FullVersionStr + "\n"
     sys.stdout.write(line)

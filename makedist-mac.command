@@ -64,7 +64,7 @@ rm -R -f installer/$PLUGIN_NAME-mac.dmg
 echo "building installer"
 echo ""
 chmod 0777 installer
-packagesbuild installer/$PLUGIN_NAME.pkgproj
+packagesbuild installer/ATK$PLUGIN_NAME.pkgproj
 
 #echo "code-sign installer for Gatekeeper on 10.8"
 #echo ""
@@ -84,15 +84,15 @@ if [ -d installer/$PLUGIN_NAME.dmgCanvas ]
 then
   dmgcanvas installer/$PLUGIN_NAME.dmgCanvas installer/$PLUGIN_NAME-mac.dmg
 else
-  hdiutil create installer/$PLUGIN_NAME.dmg -srcfolder installer/build-mac/ -ov -anyowners -volname $PLUGIN_NAME
+  hdiutil create installer/ATK$PLUGIN_NAME.dmg -srcfolder installer/build-mac/ -ov -anyowners -volname $PLUGIN_NAME
   
-  if [ -f installer/$PLUGIN_NAME-mac.dmg ]
+  if [ -f installer/ATK$PLUGIN_NAME-mac.dmg ]
   then
-   rm -f installer/$PLUGIN_NAME-mac.dmg
+   rm -f installer/ATK$PLUGIN_NAME-mac.dmg
   fi
   
-  hdiutil convert installer/$PLUGIN_NAME.dmg -format UDZO -o installer/$PLUGIN_NAME-mac.dmg
-  rm -R -f installer/$PLUGIN_NAME.dmg
+  hdiutil convert installer/ATK$PLUGIN_NAME.dmg -format UDZO -o installer/ATK$PLUGIN_NAME-mac.dmg
+  rm -R -f installer/ATK$PLUGIN_NAME.dmg
 fi
 
 rm -R -f installer/build-mac/

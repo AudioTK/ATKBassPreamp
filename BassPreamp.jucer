@@ -38,7 +38,8 @@
   </MAINGROUP>
   <EXPORTFORMATS>
     <XCODE_MAC targetFolder="Builds/MacOSX" vst3Folder="../../SDKs/VST3_SDK"
-               extraDefs="HAS_STD_ALIGN" keepCustomXcodeSchemes="1" aaxFolder="../../SDKs/AAX_SDK_2p2p2">
+               extraDefs="HAS_STD_ALIGN" keepCustomXcodeSchemes="1" aaxFolder="../../SDKs/AAX_SDK_2p2p2"
+               xcodeValidArchs="arm64,arm64e,x86_64">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="ATKBassPreamp"
                        headerPath="../../../../Plugins/BassPreamp&#10;../../../../AudioTK&#10;../../../../AudioTK/3rdParty/gsl/include&#10;../../../../AudioTK/3rdParty/eigen&#10;../../../../../local/boost_1_75_0&#10;../../../../AudioTK-Modeling"
