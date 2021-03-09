@@ -33,9 +33,7 @@ ATKBassPreampAudioProcessorEditor::ATKBassPreampAudioProcessorEditor(ATKBassPrea
   setSize(900, 200);
 }
 
-ATKBassPreampAudioProcessorEditor::~ATKBassPreampAudioProcessorEditor()
-{
-}
+ATKBassPreampAudioProcessorEditor::~ATKBassPreampAudioProcessorEditor() = default;
 
 void ATKBassPreampAudioProcessorEditor::paint(Graphics& g)
 {
