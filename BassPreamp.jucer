@@ -6,7 +6,7 @@
               buildVST="0" buildVST3="1" buildAU="0" buildAUv3="1" buildRTAS="0"
               buildAAX="0" buildStandalone="1" enableIAA="0" pluginName="BassPreamp"
               pluginDesc="" pluginManufacturer="MatthieuBrucher" pluginManufacturerCode="MatB"
-              pluginCode="Khql" pluginChannelConfigs="{1,1}" pluginIsSynth="0"
+              pluginCode="q1zs" pluginChannelConfigs="{1,1}" pluginIsSynth="0"
               pluginWantsMidiIn="0" pluginProducesMidiOut="0" pluginIsMidiEffectPlugin="0"
               pluginEditorRequiresKeys="0" pluginAUExportPrefix="ATKBassPreamp"
               pluginRTASCategory="" aaxIdentifier="com.MatthieuBrucher.BassPreamp"
