@@ -12,7 +12,8 @@
               pluginRTASCategory="" aaxIdentifier="com.MatthieuBrucher.BassPreamp"
               pluginAAXCategory="0" companyName="Matthieu Brucher" companyWebsite="http://www.audio-tk.com/"
               pluginFormats="buildAUv3,buildStandalone,buildVST3" cppLanguageStandard="latest"
-              jucerFormatVersion="1" defines="JUCE_VST3_CAN_REPLACE_VST2=0&#10;ATK_NO_FFT">
+              jucerFormatVersion="1" defines="JUCE_VST3_CAN_REPLACE_VST2=0&#10;ATK_NO_FFT"
+              useAppConfig="0" addUsingNamespaceToJuceHeader="0">
   <MAINGROUP id="H9V4ut" name="BassPreamp">
     <GROUP id="{65FEA80A-F647-1916-F1CE-08CA719AE1BE}" name="Source">
       <FILE id="LX9XxX" name="PluginProcessor.cpp" compile="1" resource="0"
@@ -39,14 +40,14 @@
   <EXPORTFORMATS>
     <XCODE_MAC targetFolder="Builds/MacOSX" vst3Folder="../../SDKs/VST3_SDK"
                extraDefs="HAS_STD_ALIGN" keepCustomXcodeSchemes="1" aaxFolder="../../SDKs/AAX_SDK_2p2p2"
-               xcodeValidArchs="arm64,arm64e,x86_64">
+               xcodeValidArchs="x86_64">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="ATKBassPreamp"
                        headerPath="../../../../Plugins/BassPreamp&#10;../../../../AudioTK&#10;../../../../AudioTK/3rdParty/gsl/include&#10;../../../../AudioTK/3rdParty/eigen&#10;../../../../../local/boost_1_75_0&#10;../../../../AudioTK-Modeling"
                        osxSDK="11.1 SDK"/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="ATKBassPreamp"
                        headerPath="../../../../Plugins/BassPreamp&#10;../../../../AudioTK&#10;../../../../AudioTK/3rdParty/gsl/include&#10;../../../../AudioTK/3rdParty/eigen&#10;../../../../../local/boost_1_75_0&#10;../../../../AudioTK-Modeling"
-                       osxSDK="11.1 SDK" codeSigningIdentity="Brucher Matthieu"/>
+                       osxSDK="10.15 SDK" codeSigningIdentity="Brucher Matthieu" osxArchitecture="64BitIntel"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
@@ -55,9 +56,6 @@
         <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
         <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
         <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_cryptography" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_video" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_opengl" path="../../JUCE/modules"/>
         <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
         <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
         <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
@@ -77,14 +75,11 @@
         <CONFIGURATION isDebug="0" name="Release" headerPath="C:\Dev\ATK-BassPreamp&#10;C:\Dev\AudioTK&#10;C:\Dev\AudioTK\3rdParty\gsl\include&#10;C:\Dev\AudioTK\3rdParty\eigen&#10;C:\Dev\boost_1_75_0&#10;C:\Dev\ATK-Modelling&#10;"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_video"/>
-        <MODULEPATH id="juce_opengl"/>
         <MODULEPATH id="juce_gui_extra"/>
         <MODULEPATH id="juce_gui_basics"/>
         <MODULEPATH id="juce_graphics"/>
         <MODULEPATH id="juce_events"/>
         <MODULEPATH id="juce_data_structures"/>
-        <MODULEPATH id="juce_cryptography"/>
         <MODULEPATH id="juce_core"/>
         <MODULEPATH id="juce_audio_utils"/>
         <MODULEPATH id="juce_audio_processors"/>
@@ -105,14 +100,11 @@
         <CONFIGURATION isDebug="0" name="Release" headerPath="C:\Dev\ATK-BassPreamp&#10;C:\Dev\AudioTK&#10;C:\Dev\AudioTK\3rdParty\gsl\include&#10;C:\Dev\AudioTK\3rdParty\eigen&#10;C:\Dev\boost_1_75_0&#10;C:\Dev\ATK-Modelling&#10;"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_video"/>
-        <MODULEPATH id="juce_opengl"/>
         <MODULEPATH id="juce_gui_extra"/>
         <MODULEPATH id="juce_gui_basics"/>
         <MODULEPATH id="juce_graphics"/>
         <MODULEPATH id="juce_events"/>
         <MODULEPATH id="juce_data_structures"/>
-        <MODULEPATH id="juce_cryptography"/>
         <MODULEPATH id="juce_core"/>
         <MODULEPATH id="juce_audio_utils"/>
         <MODULEPATH id="juce_audio_processors"/>
@@ -141,14 +133,11 @@
     <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
-    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
-    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
-    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0"/>
   </MODULES>
   <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
   <LIVE_SETTINGS>
