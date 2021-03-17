@@ -12,7 +12,6 @@
 
 #pragma once
 
-
 #include <atk_core/atk_core.h>
 #include <atk_eq/atk_eq.h>
 #include <atk_preamplifier/atk_preamplifier.h>
@@ -30,6 +29,8 @@
 #include <juce_graphics/juce_graphics.h>
 #include <juce_gui_basics/juce_gui_basics.h>
 #include <juce_gui_extra/juce_gui_extra.h>
+
+#include "BinaryData.h"
 
 #if defined(JUCE_PROJUCER_VERSION) && JUCE_PROJUCER_VERSION < JUCE_VERSION
 /** If you've hit this error then the version of the Projucer that was used to generate this project is
