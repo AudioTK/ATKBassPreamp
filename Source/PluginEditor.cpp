@@ -37,7 +37,7 @@ ATKBassPreampAudioProcessorEditor::ATKBassPreampAudioProcessorEditor(ATKBassPrea
 
   // Make sure that before the constructor has finished, you've set the
   // editor's size to whatever you need it to be.
-  setSize(380, 300);
+  setSize(380, 253);
 }
 
 ATKBassPreampAudioProcessorEditor::~ATKBassPreampAudioProcessorEditor() = default;
@@ -50,24 +50,25 @@ void ATKBassPreampAudioProcessorEditor::paint(juce::Graphics& g)
   g.drawText("Bass Preamp", 20, 10, 200, 30, juce::Justification::verticallyCentred);
   g.setFont(juce::Font("Times New Roman", 12.0f, juce::Font::bold));
   g.drawText(
-      "Gain", 20, 170, 50, 30, juce::Justification::horizontallyCentred | juce::Justification::verticallyCentred);
-  g.drawText("Low", 120, 90, 50, 30, juce::Justification::horizontallyCentred | juce::Justification::verticallyCentred);
+      "Gain", 20, 120, 50, 30, juce::Justification::horizontallyCentred | juce::Justification::verticallyCentred);
   g.drawText(
-      "Mid", 120, 170, 50, 30, juce::Justification::horizontallyCentred | juce::Justification::verticallyCentred);
+      "Low", 120, 120, 50, 30, juce::Justification::horizontallyCentred | juce::Justification::verticallyCentred);
   g.drawText(
-      "High", 120, 250, 50, 30, juce::Justification::horizontallyCentred | juce::Justification::verticallyCentred);
+      "Mid", 220, 120, 50, 30, juce::Justification::horizontallyCentred | juce::Justification::verticallyCentred);
   g.drawText(
-      "Volume", 220, 170, 50, 30, juce::Justification::horizontallyCentred | juce::Justification::verticallyCentred);
+      "High", 320, 120, 50, 30, juce::Justification::horizontallyCentred | juce::Justification::verticallyCentred);
   g.drawText(
-      "Dry/Wet", 320, 170, 50, 30, juce::Justification::horizontallyCentred | juce::Justification::verticallyCentred);
+      "Volume", 120, 220, 50, 30, juce::Justification::horizontallyCentred | juce::Justification::verticallyCentred);
+  g.drawText(
+      "Dry/Wet", 220, 220, 50, 30, juce::Justification::horizontallyCentred | juce::Justification::verticallyCentred);
 }
 
 void ATKBassPreampAudioProcessorEditor::resized()
 {
-  gain.setBounds(20, 120, 55, 55);
-  lowStack.setBounds(120, 40, 55, 55);
-  midStack.setBounds(120, 120, 55, 55);
-  highStack.setBounds(120, 200, 55, 55);
-  volume.setBounds(220, 120, 55, 55);
-  drywet.setBounds(320, 120, 55, 55);
+  gain.setBounds(20, 60, 55, 55);
+  lowStack.setBounds(120, 60, 55, 55);
+  midStack.setBounds(220, 60, 55, 55);
+  highStack.setBounds(320, 60, 55, 55);
+  volume.setBounds(120, 160, 55, 55);
+  drywet.setBounds(220, 160, 55, 55);
 }
