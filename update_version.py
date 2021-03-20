@@ -51,7 +51,7 @@ def main():
   
   print("Updating Windows Installer version info...")
   
-  for line in fileinput.input(scriptpath + "/installer/ATKBassPreamp.iss",inplace=1):
+  for line in fileinput.input(scriptpath + "/installer/BassPreamp.iss",inplace=1):
     if "AppVersion" in line:
       line="AppVersion=" + FullVersionStr + "\n"
     sys.stdout.write(line)
