@@ -37,8 +37,8 @@
 #ifndef JucePlugin_Enable_IAA
 #  define JucePlugin_Enable_IAA 0
 #endif
-#ifndef JucePlugin_Name
-#  define JucePlugin_Name "BassPreamp"
+#ifndef  JucePlugin_Name
+ #define JucePlugin_Name "ATKBassPreamp"
 #endif
 #ifndef JucePlugin_Desc
 #  define JucePlugin_Desc ""
@@ -148,8 +148,13 @@
 #ifndef JucePlugin_IAASubType
 #  define JucePlugin_IAASubType JucePlugin_PluginCode
 #endif
+<<<<<<< HEAD
+#ifndef  JucePlugin_IAAName
+ #define JucePlugin_IAAName                "MatthieuBrucher: ATKBassPreamp"
+=======
 #ifndef JucePlugin_IAAName
 #  define JucePlugin_IAAName "MatthieuBrucher: BassPreamp"
+>>>>>>> 0cd523b787c91949c667118b8e5bcf3bf07d9f57
 #endif
 #ifndef JucePlugin_VSTNumMidiInputs
 #  define JucePlugin_VSTNumMidiInputs 16
